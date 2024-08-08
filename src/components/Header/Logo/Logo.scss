@@ -1,0 +1,14 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121; /* Match the header background color */
+  }
+  
+  .logo-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    background-color: transparent; /* Ensure background is transparent */
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)); /* Optional: add some shadow for better blending */
+  }
+  

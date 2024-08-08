@@ -1,0 +1,123 @@
+@import "../../../css-config/mixins.scss";
+
+.product-card {
+    cursor: pointer;
+    width: calc(50% - 5px);
+    margin-bottom: 20px;    
+    &:hover{
+        transform: scale(1.05);
+    }
+    
+
+    // @include md {
+    //     width: calc(25% - 15px);
+    // }
+    // @include md {
+    //     width: calc(25% - 15px);
+    // }
+    @include md {
+        width: calc(25% - 15px);
+    }
+
+    @include sm {
+        width: calc(23.33% - 10px); // Three items in one row for small screens
+    }
+
+    .thumbnail {
+        width: 100%;
+        // height: 200px;
+        // background-color:rgb(154 0 255 / 10%);
+        margin-bottom: 10px;
+        padding: 9px;
+        display: flex;
+        align-items: center;
+
+        // @include md {
+        //     height: 350px;
+        // }
+
+        // @include sm {
+        //     height: 300px; // Adjust height for small screens
+        // }
+
+        img {
+            transition: all ease 0.3s;
+            display: block;
+            width: 100%;
+           
+        }
+    }
+
+    .prod-details {
+        padding-left: 5px;
+
+
+        // @include md {
+        //     display: flex;
+        //     flex-direction: column;
+            
+        // }
+    
+       
+       
+        
+        .name {
+            font-size: 16px;
+            display: block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            &:hover{
+                text-decoration: underline;
+                text-decoration-color: #310057;
+                padding-bottom: 0;
+                color: #8200e6;
+            }
+           
+            @include md {
+               
+                font-size: 16px;
+                margin-bottom: 10px;
+                
+            }
+        }
+
+        .price {
+            font-size: 19px;
+            
+
+            @include md {
+                font-size: 21px;
+            }
+        }
+    }
+
+    .fake-price{
+        font-size: 15px;
+        padding-right: 12px;
+        text-decoration: line-through;
+        display: block;
+        text-decoration-color: black;
+        color: red;
+
+        // @include lg{
+        //     display: block;
+        // }
+        // @include md{
+        //     display: block;
+        // }
+        @include sm {
+            display: inline;
+        }
+    }
+
+
+    
+    &:hover {
+        .thumbnail {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+}

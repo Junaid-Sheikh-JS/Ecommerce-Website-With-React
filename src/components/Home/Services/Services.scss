@@ -1,0 +1,74 @@
+.container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* Added to allow wrapping on smaller screens */
+  gap: 15px; /* Increased gap for better spacing */
+  justify-content: center; /* Center align the sections */
+}
+
+.section {
+  flex: 1 1 23%; /* Flex basis for responsive width */
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: border 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for both border and shadow */
+    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slightly larger shadow on hover */
+  // background-color: #f9f9f9; /* Slight background color for better contrast */
+}
+
+.icon-box {
+  font-size: 3em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.text-box {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Apply border and shadow on hover */
+.section:hover {
+//   background-color: #fff;
+cursor: pointer;
+box-shadow: 0 4px 9px rgba(0, 0, 0, 0.3); /* Default shadow for non-hover state */
+  // border: 2px solid #333; /* Adjust the border color and width as needed */
+}
+
+/* Media query for screen sizes up to 1200px (tablet and larger phones) */
+@media (max-width: 1200px) {
+  .section {
+    flex: 1 1 30%; /* Adjust the width for medium screens */
+  }
+}
+
+/* Media query for screen sizes up to 768px (small tablets and large phones) */
+@media (max-width: 768px) {
+  .section {
+    flex: 1 1 45%; /* Adjust the width for small tablets and large phones */
+  }
+}
+
+/* Media query for screen sizes up to 600px (small phones) */
+@media (max-width: 600px) {
+  .section {
+    flex: 1 1 100%; /* Full width for small phones */
+    margin-bottom: 15px; /* Reduce bottom margin for smaller screens */
+  }
+}
+
+/* Media query for screen sizes up to 360px (very small phones) */
+@media (max-width: 360px) {
+  .section {
+    padding: 15px; /* Adjust padding for very small screens */
+    font-size: 0.8em; /* Reduce font size for very small screens */
+  }
+}

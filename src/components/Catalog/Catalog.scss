@@ -1,0 +1,231 @@
+@import "../../css-config/mixins.scss";
+
+.catalog-container {
+  margin: 50px 0;
+
+  @include md {
+    margin: 75px 0;
+  }
+
+  .catalog-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+
+  .filter-sort-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .sort {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+
+    label {
+      margin-right: 10px;
+      color: #333;
+      font-weight: 600;
+    }
+
+    select {
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      transition: border-color 0.3s ease;
+      background-color:  rgb(223 197 248 / 46%);
+      cursor: pointer;
+
+      &:focus {
+        border-color: #8306fc0f;
+        outline: none;
+      }
+    }
+  }
+
+  .categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .category-item {
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+    
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 150px;
+      object-fit: cover;
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    span {
+      display: block;
+      padding: 10px;
+      font-weight: bold;
+      color: #333;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #8e2de2;
+      }
+    }
+
+    &.active {
+      background-color: #8e2de2;
+      span {
+        color: #fff;
+      }
+    }
+  }
+
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .product-card {
+    flex: 1 1 300px;
+    max-width: 300px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    // overflow: hidden;
+    width: 100%;
+    // background-color: #fff;
+    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    &:hover {
+      transform: scale(1.01);
+    //   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+    
+    
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: cover;
+    }
+  }
+
+  .product-count {
+    text-align: center;
+    margin-top: 20px;
+    color: #c270f8;
+  }
+}
+
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 120px 0;
+}
+
+.products-container h1 {
+  // text-align: center;
+  font-size: 77px;
+  margin-bottom: 85px;
+  color: #333;
+}
+
+.category-item img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

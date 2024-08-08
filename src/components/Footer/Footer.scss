@@ -1,0 +1,94 @@
+@import "../../css-config/mixins.scss";
+
+.footer {
+  background-color: #212121;
+  color: white;
+  width: 100%;
+  .footer-content {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    gap: 20px;
+    @include md {
+      justify-content: space-between;
+      padding: 50px 0;
+    }
+    .col {
+      max-width: 300px;
+      &:nth-child(3) {
+        width: 150px;
+        @include md {
+          width: auto;
+        }
+      }
+      .title {
+        h1 {
+          margin-bottom: 20px;
+          font-size: 20px;
+          font-weight: bolder;
+        }
+      }
+      .about-text{
+        color: rgb(242 229 255);
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 1.4px;
+      }
+      .text {
+        color: rgb(193, 193, 193);
+        font-size: 14px;
+        &:hover {
+          color: rgb(150, 78, 216);
+          // border-bottom: 3px solid purple;
+          //   width: 35%;
+          // scale: 1.02;
+        }
+      }
+      .c-item {
+        display: flex;
+        margin-bottom: 10px;
+        svg {
+          flex-shrink: 0;
+          font-size: 14px;
+          margin-right: 10px;
+          margin-top: 4px;
+          color: rgb(148, 147, 147);
+        }
+      }
+      span {
+        &.text {
+          display: block;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .bottom-bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.493);
+    .bottom-bar-content {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+      @include md {
+        padding: 0;
+        height: 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+      .text {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+     
+    }
+  }
+}

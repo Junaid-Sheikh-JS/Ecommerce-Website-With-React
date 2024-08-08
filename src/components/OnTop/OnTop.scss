@@ -1,0 +1,33 @@
+@import "../../css-config/mixins.scss";
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #d5d1d1; // Optional: Background color
+    padding: 8px 0 35px 0; // Optional: Padding
+    color: indigo;
+    position: relative; // Ensure the container positions its children correctly
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute; // Positioning the marquee absolutely within the container
+    width: 100%; // Ensure the width of the marquee element
+    animation: marquee 15s linear infinite;
+    
+    // Optional: Add space between the text elements
+    & > strong {
+        margin-right: 1250px; // Adjust the spacing as needed
+    }
+
+    strong {
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+}
+
+@keyframes marquee {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}

@@ -1,0 +1,106 @@
+
+@import "../../../css-config/mixins.scss";
+
+.privacy-container {
+    padding: 1.5rem;
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;  // Light background color for contrast
+    border-radius: 8px;        // Rounded corners for a softer look
+
+    .privacy-header {
+        text-align: center;
+        margin: 2rem 0 4rem 0;
+
+        h1 {
+            font-size: 3.5rem;
+            color: #8e2de2;
+            font-weight: bold;
+            margin: 0;
+
+            @include md {
+                font-size: 3rem;
+            }
+
+            @include sm {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .privacy-body {
+        h2 {
+            font-size: 1.8rem;
+            margin: 2.4rem 0;  // Increased spacing above headings
+            color: #007acc;
+            font-weight: bold;
+
+            @include md {
+                font-size: 1.6rem;
+            }
+
+            @include sm {
+                font-size: 1.4rem;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;  // Increased line height for better readability
+            margin-top: 1rem;  // Slightly darker color for better readability
+
+            @include md {
+                font-size: 0.9rem;
+            }
+
+            @include sm {
+                font-size: 0.85rem;
+            }
+        }
+
+        ul {
+            font-size: 1rem;
+            line-height: 1.6;  // Match line height with paragraphs
+            margin-top: 1.3rem;
+            margin-left: 2.2rem;
+            list-style-type: disc;
+
+            li {
+                margin-bottom: 0.5rem;
+
+                @include md {
+                    font-size: 0.9rem;
+                }
+
+                @include sm {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+
+        .section {
+            width: 100%;
+            margin: 3rem 0;  // Space between sections
+            padding: 0rem 0 1rem 0;  // Padding inside sections
+            border-bottom: 1px solid #ddd;  // Light border for section separation
+        }
+    }
+}
+
+.main-sec p {
+    font-size: 1.2rem;
+    color: rgb(249, 0, 0);
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    font-style: italic;  // Space below the first paragraph
+
+    @include md {
+        font-size: 1.1rem;
+    }
+
+    @include sm {
+        font-size: 1rem;
+    }
+}

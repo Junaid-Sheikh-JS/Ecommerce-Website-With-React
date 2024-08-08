@@ -1,0 +1,206 @@
+// @import "../../../css-config/mixins.scss";
+
+// .terms-container {
+//     margin: 20px auto;
+//     padding: 20px;
+//     max-width: 800px;
+//     font-family: Arial, sans-serif;
+//     color: #333;
+// }
+
+// .terms-header {
+//     text-align: center;
+//     margin-bottom: 20px;
+// }
+
+// .shopify-policy__body {
+//     line-height: 1.6;
+// }
+
+// .rte h1, .rte h2 {
+//     margin-top: 20px;
+//     font-size: 24px;
+//     color: #444;
+// }
+
+// .rte p {
+//     margin: 10px 0;
+// }
+
+// .rte ul {
+//     list-style-type: disc;
+//     margin-left: 20px;
+// }
+
+// .rte ul li {
+//     margin: 5px 0;
+// }
+
+// .container {
+//     margin-top: 20px;
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+// .container strong {
+//     display: block;
+//     margin-top: 20px;
+//     font-weight: bold;
+//     color: #444;
+// }
+
+// .container p {
+//     margin: 10px 0;
+// }
+
+// .container a {
+//     color: #0066cc;
+//     text-decoration: none;
+// }
+
+// .container a:hover {
+//     text-decoration: underline;
+// }
+
+
+// .section {
+//     width: 100%;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "../../../css-config/mixins.scss";
+
+.terms-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+    color: #333;
+
+    @include sm {
+        padding: 15px;
+    }
+
+    @include md {
+        padding: 20px;
+    }
+
+    @include lg {
+        padding: 25px;
+    }
+}
+
+.terms-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.shopify-policy__body {
+    line-height: 1.6;
+}
+
+.rte h1, .rte h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #444;
+
+    @include sm {
+        font-size: 22px;
+    }
+
+    @include md {
+        font-size: 24px;
+    }
+
+    @include lg {
+        font-size: 26px;
+    }
+}
+
+.rte p {
+    margin: 10px 0;
+}
+
+.rte ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.rte ul li {
+    margin: 5px 0;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container strong {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #444;
+}
+
+.container p {
+    margin: 10px 0;
+}
+
+.container a {
+    color: #0066cc;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.section {
+    width: 100%;
+}
+
+
+.terms{
+    text-align: center;
+}

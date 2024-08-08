@@ -1,0 +1,149 @@
+@import "../../../css-config/mixins.scss";
+
+:root {
+  --primary-color: #8e2de2; /* Purple */
+  --secondary-color: #f1c40f; /* Yellow */
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --main-text-color: #1c8cdb;
+  --border-color: #ddd;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.returns {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 12px var(--box-shadow-color);
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+
+  h1 {
+    font-size: 50px;
+    padding-bottom: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+  .main-sec {
+    margin-bottom: 100px;
+    p {
+      color: var(--main-text-color);
+      font-weight: bold;
+    }
+  }
+
+  .section {
+    margin-bottom: 80px;
+    padding: 20px;
+    border-radius: 8px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    &:nth-child(odd) {
+      background-color: #f7f7f7;
+    }
+  }
+
+  // Additional spacing between paragraphs
+  p + p {
+    margin-top: 25px;
+  }
+
+  // Add responsiveness
+  @media (max-width: 1024px) {
+    .returns {
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .returns {
+      margin: 30px auto;
+      padding: 15px;
+    }
+
+    h1 {
+      font-size: 22px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .returns {
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  // Additional design elements
+  .section {
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #f2f2f2;
+      transform: scale(1.02);
+    }
+  }
+
+  h1,
+  h3 {
+    transition: color 0.3s ease-in-out;
+  }
+
+  p {
+    transition: color 0.3s ease-in-out;
+  }
+}
