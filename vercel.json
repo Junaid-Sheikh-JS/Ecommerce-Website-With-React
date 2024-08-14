@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://ecom-panel-cd831bb256c5.herokuapp.com/api/$1"
+    }
+  ],
+  "env": {
+    "REACT_APP_API_URL": "https://ecom-panel-cd831bb256c5.herokuapp.com"
+  }
+}
